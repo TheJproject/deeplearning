@@ -22,6 +22,11 @@ from torch.utils.data import Dataset
 import torch
 import torch.nn as nn 
 
+
+print(torch.cuda.is_available())
+print(torch.cuda.current_device())
+print(torch.cuda.get_device_name(0))
+
 #%pip install pyarrow
 ##%pip install fastparquet
 
@@ -72,7 +77,7 @@ obd = s0['GM.obd.spd_veh.value']
 fig, ax1 = plt.subplots()
 ax2 = ax1.twinx()
 ax1.plot(accT, accZ, color='#1f77b4')
-ax2.plot(obdT, obd, color='#ff7f0e');
+ax2.plot(obdT, obd, color='#ff7f0e')
 
 # weird stuff on the orange curve (?)
 
