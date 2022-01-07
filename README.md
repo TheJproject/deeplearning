@@ -24,7 +24,7 @@ In general, when looking through old commit or old models we made, we tried to k
 ```
 Initializable like regular torch model (inherits from `nn.Module()`).<br>
 class: `AE_conv`, uses $1D$ convolutional layers, which do not work with packed sequences. 
-
+<br>couckou
 ### TODO:
 ok :)
 ### Considérations pour le report:
